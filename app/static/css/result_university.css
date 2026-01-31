@@ -1,0 +1,155 @@
+body {
+    background-color:rgb(235, 235, 235);
+    margin:0;
+    font-size: 130%;
+    background-image: url("../image/Background_2.jpeg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+}
+
+.line {
+    background-color:rgb(66, 33, 41);
+    height:2px;
+    width:35%;
+    padding:0;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+.top {
+    width:100%;
+    height:80px;
+    background-color: rgb(66, 33, 41);
+    display: flex;
+    justify-content: inherit;
+    align-items:normal;
+}
+
+.detail {
+    position: relative;
+    margin-left: 7%;
+    width:100 - 14%;
+    margin-right: 7%;
+}
+
+.display_on {
+    user-select:none;
+    font-size:240%;
+    height:40px;
+    width:40px;
+    color:rgb(218, 218, 218);
+    margin-left: 10px;
+}
+
+/*サイドバー*/
+.dark {
+    position:fixed;
+    background-color: rgba(0,0,0,0.4);
+    width:100vw;
+    height:130vw;
+    left:-2000px;
+    top:0;
+    bottom:0;
+}
+
+.sidebar {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgb(93, 51, 61);
+    width:270px;
+    position: fixed;
+    left:-430px;
+    top:0;
+    height:100%;
+    bottom:0;
+    transition: 0.5s;
+}
+
+.sidebar li {
+    list-style: none;
+    color: rgb(186, 173, 176);
+    padding:0 0 0 20px ;
+    margin:0;
+    border-top:1px solid rgba(42, 21, 26,0.5);
+    border-bottom:1px solid rgba(42, 21, 26, 0.5);
+}
+
+.sidebar ul {
+    margin:0 0 0 0px;
+    padding:0 0 0 0px;
+    line-height: 60px;
+    border-top:1px solid rgba(42, 21, 26, 0.5);
+    border-bottom:1px solid rgba(42, 21, 26, 0.5);
+    user-select: none;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: rgb(255, 243, 245);
+    display:block;
+    height:100%;
+    width:100%;
+    line-height: 60px;
+    padding:0 0 0 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 0;
+    margin-top:0;
+    font-size:35px;
+    color: rgb(255, 243, 245);
+    text-align: center;
+    align-content: center;
+    background-color: rgb(42, 21, 26);
+    height:90px;
+    user-select: none;
+}
+
+.sidebar ul li:hover a {
+    padding-left:40px;
+}
+
+.sidebar_button {
+    left:-600px;
+    position: fixed;
+}
+
+.sidebar_button:checked ~ .dark {
+    left:0;
+}
+
+.sidebar_button:checked ~ .sidebar {
+    left:0;
+}
+
+.img {
+    width:70vw;
+    height:47vw;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    outline: 15px solid rgb(66, 33, 41);
+    display: block;
+    margin: auto;
+}
+
+.back_top {
+    margin: 200px auto 40px auto;
+    width:50vw;
+    text-align: center;
+}
+
+.back_top a {
+    background-color: rgb(66, 33, 41);
+    font-size: 200%;
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,65 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>適正診断</title>
+    <link href="{% static 'css/top_page.css' %}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+<!--ページのトップ-->
+<div class="top">
+<label for="check" class="display_on">≡</label>
+</div>
+
+<!--前置き-->
+<h2 style="padding-left:6%;margin:0;padding-top:20px;">診断してみよう</h2>
+<hr class="line">
+<div class="detail">
+    <p>このサイトではいくつかの質問からあなたに適した大学をオススメします<br>
+        また、あなたに適した東京電機大学における学科もオススメします<br>
+    </p>
+</div>
+<!--診断選択-->
+<div class="buttom">
+    <div class="buttom_1">
+        <div class="center">
+            <img src="{% static 'image/students.jpg' %}">
+            <h1>大学適正診断</h1>
+            <p>あなたに合った大学を見つけよう</p>
+            <div class="atag">
+                <a href="/university">診断する</a>
+            </div>
+        </div>
+    </div>
+    <div class="buttom_2">
+        <div class="center">
+            <img src="{% static 'image/tdu.jpg'%}">
+            <h1>学科適正診断</h1>
+            <p>あなたに合った東京電機大学の学科を<br>見つけよう</p>
+            <div class="atag">
+                <a href="{% url 'university' %}">診断する</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--サイドバー-->
+<section>
+<input class="sidebar_button" type="checkbox" id="check">
+<label for="check" class="dark"></label>
+<div class="sidebar">
+    <h2>情報一覧</h2>
+    <ul>
+        <li><a href="#">トップページ</a></li>
+        <li>◆診断一覧◆</li>
+        <li><a href="{%url 'university'%}">大学適正診断</a></li>
+        <li><a href="test_department.html">学科適正診断</a></li>
+    </ul>
+</div>
+</section>
+
+</body>
+</html>
