@@ -20,3 +20,9 @@ def university(request):
 
 def department(request):
     return render(request, "app/department.html")
+
+def aogaku(request):
+    return render(request,"app/aogaku.html")
+
+def dendai(request):
+    return render(request,"app/university/dendai.html")

@@ -66,4 +66,5 @@ function calculateScore(){
         }
     }
     console.log(total)
+    window.location.href= config.aogaku;
 }

@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大学適正診断</title>
     <link href="{% static 'css/test.css' %}" rel="stylesheet" type="text/css" media="all">
+    <script>
+        const config = {
+            dendai : "{% url 'dendai' %}",
+            aogaku: "{% url 'aogaku' %}",
+        };
+    </script>
     <script src="{% static 'js/test.js' %}"></script>
 </head>
 <body>

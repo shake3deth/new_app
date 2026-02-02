@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>診断結果 - 東京電機大学</title>
-    <link href="../css/result_university.css" rel="stylesheet" type="text/css" media="all">
+    <link href="{% static 'css/result_university.css' %}" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
 
@@ -21,7 +22,7 @@
 </div>
 
 <div class="img">
-    <img src="../img/tdu.jpg">
+    <img src="{%static 'image/tdu.jpg'%}">
 </div>
 
 
@@ -32,7 +33,7 @@
 </div>
 
 <div class="back_top">
-    <a href="../index.html">トップページに戻る</a>
+    <a href="/">トップページに戻る</a>
 </div>
 
 <!--サイドバー-->
