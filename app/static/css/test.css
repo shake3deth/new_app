@@ -8,8 +8,8 @@ body {
     background-position: center;
 }
 
-.frame {
-    height:25vh;
+#frame {
+    height:auto;
     width:100%;
 }
 
@@ -39,7 +39,7 @@ label {
     margin-top: 27px;
     border: 2px solid rgb(66, 33, 41);
     border-radius: 5px;
-    float: left;
+    /*float: left;*/
     width:20vw;
     height:8vh;
     display: flex;

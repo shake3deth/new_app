@@ -16,7 +16,7 @@ def renshu(request):
     return render(request, "app/renshu.html")
 
 def university(request):
-    return render(request, "app/test_university.html")
+    return render(request, "app/uni.html")
 
 def department(request):
     return render(request, "app/department.html")

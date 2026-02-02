@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大学適正診断</title>
+    <link href="{% static 'css/test.css' %}" rel="stylesheet" type="text/css" media="all">
+    <script src="{% static 'js/test.js' %}"></script>
+</head>
+<body>
+<div class="top">
+    <label for="check" class="display_on">≡</label>
+</div>
+
+<div class="back_page">
+    <a href="/">⇦ 戻る</a>
+</div>
+<h2 style="padding-left:6%;margin:0;padding-top:20px;">大学適性診断</h2>
+<hr class="line">
+<div class="detail">
+    <p>これからする質問に対して正直に回答してください<br>なるべく「わからない」を選択しないようにするとより正確な結果になります</p>
+</div>
+
+<div id="frame">
+</div>
+
+<div class="end">
+    <hr class="line">
+    <button type="button" onclick="calculateScore()">診断する</button>
+</div>
+
+<!--サイドバー-->
+<section>
+<input class="sidebar_button" type="checkbox" id="check">
+<label for="check" class="dark"></label>
+<div class="sidebar">
+    <h2>情報一覧</h2>
+    <ul>
+        <li><a href="{% url 'index' %}">トップページ</a></li>
+        <li>◆診断一覧◆</li>
+        <li><a href="{%url 'university'%}">大学適正診断</a></li>
+        <li><a href="{%url 'department'%}">学科適正診断</a></li>
+    </ul>
+</div>
+</section>
+</body>
+</html>
