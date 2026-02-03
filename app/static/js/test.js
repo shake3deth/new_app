@@ -19,6 +19,7 @@ const value = [
     "そう思わない"
 ]
 
+
 window.onload = function(){
     let d = document.getElementById("frame");
     for(let i = 0 ; i < 10 ; i++){
@@ -57,13 +58,27 @@ window.onload = function(){
 }
 
 function calculateScore(){
+    let a_count = 0
     let total = 0;
     let parent = document.querySelectorAll("div.center");
     for(let i = 0 ; i < parent.length ; i++){
         let selected = parent[i].querySelector(`input:checked`);
         if(selected){
             total += Number(selected.value);
+        }else{
+            a_count += 1
         }
     }
-    window.location.href= config.aogaku;
+    if(a_count == 0){
+        if(total >= (40/3)*2){
+            window.location.href = config.dendai;
+        }else if(total >= (40/3)){
+            window.location.href = config.dentu;
+        }else{
+            window.location.href = config.aogaku;
+        }
+    }else{
+        alert("すべてを選択してください");
+    }
+    
 }

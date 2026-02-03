@@ -10,4 +10,5 @@ urlpatterns = [
     path("department/", views.department , name = "department"),
     path("aogaku/",views.aogaku , name="aogaku"),
     path("dendai/",views.dendai, name="dendai"),
+    path("dentu/",views.dentu, name="dentu"),
 ]

@@ -2,9 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def index(request):
-    username = "shake"
-    con = {"usernam" : username}
-    return render(request, "app/index.html",context = con)
+    return render(request, "app/index.html")
 
 def mypage(request):
     return render(request, "app/mypage.html")
@@ -26,3 +24,6 @@ def aogaku(request):
 
 def dendai(request):
     return render(request,"app/university/dendai.html")
+
+def dentu(request):
+    return render(request, "app/dentu.html")
