@@ -20,7 +20,7 @@ const value = [
 ]
 
 
-window.onload = function(){
+window.onload = function (){
     let d = document.getElementById("frame");
     for(let i = 0 ; i < 10 ; i++){
         //親
