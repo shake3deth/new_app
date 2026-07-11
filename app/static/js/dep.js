@@ -23,6 +23,7 @@ window.onload = function(){
         input.id = `q1_${i+1}`;
         input.name = `q_1`;
         input.value = i+1;
+        input.onclick = check;
         div1.appendChild(input);
         let label = document.createElement("label");
         label.htmlFor = `q1_${i+1}`;
@@ -32,7 +33,14 @@ window.onload = function(){
     frame.appendChild(div1);
 }
 
-function check(){
+function check(event){
+    if(event.target.id == "q1_1"){
+        info();
+    }
+    else if(event.target.id == "q1_2"){
+        machine();
+    }
+    
 }
 
 function calculateScore(){
@@ -43,7 +51,7 @@ function info(){
 
 }
 
-function mach(){
+function machine(){
 
 }
 
