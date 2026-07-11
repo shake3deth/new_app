@@ -40,7 +40,7 @@ window.onload = function (){
             let input = document.createElement("input");
             input.type = "radio";
             input.id = `q${i+1}_${j+1}`;
-            input.name = `q_${i+1}`
+            input.name = `q_${i+1}`;
             input.value = 4 - j;
             div1.appendChild(input);
             let label = document.createElement("label");
